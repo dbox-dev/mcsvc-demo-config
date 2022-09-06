@@ -23,7 +23,7 @@ customerService:
     listOfServers: http://localhost:8081/
 accountService:
   ribbon:
-    listOfServers: http://localhost:8081/
+    listOfServers: http://localhost:8082/
 
 eureka:
   client:
