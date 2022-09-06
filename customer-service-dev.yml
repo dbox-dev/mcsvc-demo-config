@@ -15,6 +15,10 @@ ribbon:
     enabled: true
     clients: http://localhost:8082/
 
+accountService:
+  ribbon:
+    listOfServers: http://localhost:8082/
+
 eureka:
   client:
     service-url:
