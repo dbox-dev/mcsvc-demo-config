@@ -10,10 +10,9 @@ spring:
     sampler:
       probability: 1.0
 
-ribbon:
-  eager-load:
-    enabled: true
-    clients: http://localhost:8082/
+accountService:
+  ribbon:
+    listOfServers: http://localhost:8082/
 
 eureka:
   client:
