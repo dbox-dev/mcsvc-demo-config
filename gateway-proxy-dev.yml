@@ -11,12 +11,17 @@ zuul:
   routes:
     customer-service:
       path: /customer/**
-      url: http://localhost:8081/
       stripPrefix: false
     account-service:
       path: /account/**
-      url: http://localhost:8081/
       stripPrefix: false
+      
+customer-service:
+  ribbon:
+    listOfServices: http://localhost:8081/
+account-service:
+  ribbon:
+    listOfServices: http://localhost:8081/
 
 eureka:
   client:
