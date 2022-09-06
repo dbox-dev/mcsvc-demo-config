@@ -12,14 +12,16 @@ zuul:
     customer-service:
       path: /customer/**
       stripPrefix: false
+      serviceId: customerService
     account-service:
       path: /account/**
       stripPrefix: false
-      
-customer-service:
+      serviceId: accountService
+
+customerService:
   ribbon:
     listOfServices: http://localhost:8081/
-account-service:
+accountService:
   ribbon:
     listOfServices: http://localhost:8081/
 
