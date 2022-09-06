@@ -9,6 +9,9 @@ spring:
       override-system-properties: false
       allow-override: true
       override-none: true
+  sleuth: 
+    sampler:
+      probability: 1.0
 
 eureka:
   client:
