@@ -17,11 +17,14 @@ zuul:
       path: /account/**
       stripPrefix: false
       serviceId: accountService
+  SendErrorFilter:
+    post:
+      disable: true
 
 ribbon:
    eureka:
       enabled: false
-      
+
 customerService:
   ribbon:
     listOfServers: http://localhost:8081/
