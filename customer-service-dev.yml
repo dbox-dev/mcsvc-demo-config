@@ -11,8 +11,9 @@ spring:
       probability: 1.0
 
 ribbon:
-  eureka:
-    enabled: false
+  eager-load:
+    enabled: true
+    clients: http://localhost:8082/
 
 eureka:
   client:
