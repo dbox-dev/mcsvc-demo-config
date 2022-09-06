@@ -10,7 +10,7 @@ spring:
     sampler:
       probability: 1.0
 
-accountService:
+account-service:
   ribbon:
     listOfServers: http://localhost:8082/
 
