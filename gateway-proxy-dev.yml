@@ -20,7 +20,7 @@ zuul:
 
 customerService:
   ribbon:
-    listOfServers: http://localhost:8081/,http://localhost:8084/
+    listOfServers: http://localhost:8081/
 accountService:
   ribbon:
     listOfServers: http://localhost:8081/
