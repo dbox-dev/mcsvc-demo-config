@@ -18,12 +18,15 @@ zuul:
       stripPrefix: false
       serviceId: accountService
 
-customerService:
-  ribbon:
-    listOfServers: http://localhost:8081/,http://localhost:8084/
-accountService:
-  ribbon:
-    listOfServers: http://localhost:8081/
+ribbon:
+  eureka:
+    enabled: true
+# customerService:
+#   ribbon:
+#     listOfServers: http://localhost:8081/,http://localhost:8084/
+# accountService:
+#   ribbon:
+#     listOfServers: http://localhost:8081/
 
 eureka:
   client:
