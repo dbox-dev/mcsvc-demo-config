@@ -13,13 +13,13 @@ spring:
 ribbon:
   eager-load:
     enabled: true
-    clients: http://localhost:8082/
+    clients: http://account-service:8082/
 
 accountService:
   ribbon:
-    listOfServers: http://localhost:8082/
+    listOfServers: http://account-service:8082/
 
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:9001/eureka
+      defaultZone: http://discovery:9001/eureka
