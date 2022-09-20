@@ -14,18 +14,29 @@ spring:
     redis:
       time-to-live: 60000
   redis:
-    host: localhost
+    host: redis
     port: 6379
     password: "eYVX7EwVmmxKPCDmwMtyKVge8oLd2t81"
+  zipkin:
+    enabled: true
+    base-url: http://zipkin:9411
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - health
+        - info
+        - prometheus
 
 ribbon:
   eager-load:
     enabled: true
-    clients: http://localhost:8082/
+    clients: http://account-service:8082/
 
 accountService:
   ribbon:
-    listOfServers: http://localhost:8082/
+    listOfServers: http://account-service:8082/
 
 eureka:
   client:
