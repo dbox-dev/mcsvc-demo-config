@@ -24,4 +24,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: https://k-discovery-svc.herokuapp.com/eureka
+      defaultZone: http://discovery:9001/eureka
