@@ -32,6 +32,15 @@ accountService:
   ribbon:
     listOfServers: http://localhost:8082/
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - health
+        - info
+        - prometheus
+        
 eureka:
   client:
     service-url:
