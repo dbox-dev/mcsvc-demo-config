@@ -20,6 +20,10 @@ spring:
   zipkin:
     enabled: true
     base-url: http://zipkin:9411
+opentracing:
+  jaeger:
+    http-sender:
+      url: http://jaeger-allinone:14268/api/traces
 management:
   endpoints:
     web:
